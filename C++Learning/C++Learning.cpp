@@ -3,6 +3,8 @@
 
 
 #include <iostream>
+#include "TestItem.cpp";
+
 using namespace std;
 
 double geld = 0.0;
@@ -13,6 +15,10 @@ void print(string d);
 
 int main()
 {
+    TestItem s(367655);
+    s.addMoney(100);
+    cout << "Kunde mit der ID " << s.getID() << " hat " << s.getMoney() << "Euro auf seinem Konto" << endl;
+
     while (true) {
         print("Bitte gebe dein vorhandenes Geld ein!");
         cin >> geld;
