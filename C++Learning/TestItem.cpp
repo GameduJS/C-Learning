@@ -2,7 +2,9 @@
 
 class TestItem {
 
-	
+private:
+	int money;
+	long id;
 
 public:
 
@@ -11,15 +13,13 @@ public:
 		this->money = 0;
 	}
 
-	int money;
-	long id;
 	
 	void addMoney(int amount) {
 		this->money += amount;
 	}
 
 	int getMoney() {
-		return money;
+		return this->money;
 	}
 
 	void setID(long id) {
@@ -27,7 +27,7 @@ public:
 	}
 
 	long getID() {
-		return id;
+		return this->id;
 	}
 
 };
